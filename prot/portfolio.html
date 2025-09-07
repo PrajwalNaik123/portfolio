@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prajwal Naik — Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    header h1 { font-size: 20px; }
+    nav a {
+      color: #fff; text-decoration: none; margin-left: 20px;
+      font-size: 14px; transition: color 0.3s;
+    }
+    nav a:hover { color: #ff9800; }
+    .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+    section { margin-bottom: 60px; }
+    h2 {
+      font-size: 22px; margin-bottom: 20px;
+      border-bottom: 2px solid #ff9800; display: inline-block;
+      padding-bottom: 5px;
+    }
+    .hero {
+      text-align: center; padding: 60px 20px; background: #ff9800; color: #fff;
+    }
+    .hero h2 { font-size: 32px; margin-bottom: 10px; border: none; }
+    .hero p { font-size: 16px; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .card {
+      background: #fff; padding: 20px; border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 { margin-bottom: 8px; font-size: 18px; }
+    .skills-list, .contact-info {
+      display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .tag {
+      background: #eee; padding: 6px 12px; border-radius: 20px;
+      font-size: 13px;
+    }
+    footer {
+      background: #222; color: #fff; text-align: center;
+      padding: 20px; font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Prajwal Naik</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Hello, I'm Prajwal 👋</h2>
+    <p>Student | Problem Solver</p>
+  </section>
+
+  <div class="container">
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I’m a 3rd-year CSE student passionate about building projects in web development, 
+        Python, and databases. I developed a multilingual chatbot with speech recognition 
+        and a timetable manager for buses & trains. Interested in backend and full-stack development.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Government-Scheme Chatbot</h3>
+          <p><b>Tech:</b> Python, Django, Whisper, MongoDB</p>
+          <ul>
+            <li>Supports Kannada/Tamil/English via STT/TTS.</li>
+            <li>Scrapes portals daily for updated scheme data.</li>
+            <li>Intent classification & retrieval-based answers.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Bus & Train Timetable Manager</h3>
+          <p><b>Tech:</b> Django, SQLite</p>
+          <ul>
+            <li>Admin manages bus/train timetables with via-route times.</li>
+            <li>Responsive UI for easy data updates.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Django</span>
+        <span class="tag">Git</span>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <p>MySQL — Udemy</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+      <p><b>B.E. in Computer Science & Engineering</b> — VCET, Puttur (Expected 2026) · CGPA: 8.4/10</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <span class="tag">📍 Karnataka, IN</span>
+        <span class="tag">📞 +91-9110876810</span>
+        <span class="tag">✉️ prajwalnaik0704@gmail.com</span>
+        <span class="tag">🔗 <a href="https://linkedin.com/in/prajwal-naik -16aa91382" target="_blank">LinkedIn</a></span>
+        <span class="tag">💻 <a href="https://github.com/PrajwalNaik123" target="_blank">GitHub</a></span>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Prajwal Naik. All rights reserved.
+  </footer>
+</body>
+</html>
